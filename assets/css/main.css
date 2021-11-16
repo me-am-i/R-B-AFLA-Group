@@ -1,0 +1,177 @@
+@font-face {
+	font-family: "Bebas";
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src:	local("Bebas"),
+	url("https://fonts.gstatic.com/s/bebasneue/v2/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2") format('woff2'),
+	url("../fonts/Bebas.woff2") format("woff2");
+}
+
+HTML {
+	font-size:27px
+}
+
+BODY {
+	margin:0;
+	padding:0;
+	font-family: "Bebas", "Arial", sans-serif;
+	color:#787878;
+}
+
+.wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -317px 0 0 -295px; 
+	border:13px solid #EBEBEB;
+	padding:16px;
+	width:532px;
+	height:547px;
+	background-color:#F8F8F8;
+}
+
+.form__radio {
+	border: 1px solid #F8F8F8;
+	width:526px;
+	padding: 9px 0 9px;
+	margin-left: -20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+fieldset {
+	border: none;
+}
+
+input[type='radio'] {
+	appearance: none;
+	border: 5px solid #DADADA;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	outline: none;
+	margin: 7px 0px 7px 24px;
+}
+
+input:checked {
+	border: 5px solid #34648e;
+	background:radial-gradient(#0294bf 6px, transparent 7px)
+}
+
+.checked {
+	border: 1px solid #b8d7e2;
+	background: #ebf4f7;
+}
+
+.unchecked {
+	border: 1px solid transparent;
+	background: #F8F8F8;
+}
+
+label {
+	padding: 5px 160px 0px 0px;
+	text-transform: uppercase;
+}
+
+.price {
+	font-family: "Arial", sans-serif;
+	font-size:18px;
+	padding: 10px 13px 0 0;
+}
+
+small {
+	 font-size:17px;
+	 vertical-align: 30%; 
+}
+
+.select {
+	position: relative;
+	display: inline-block;
+}
+
+.select:after {
+	content: "▼";
+	padding: 0 8px;
+	font-size: 12px;
+	position: absolute;
+	right: 195px;
+	top: 41px;
+	z-index: 1;
+	text-align: center;
+	width: 10%;
+	height: 100%;
+	pointer-events: none;
+	box-sizing: border-box;
+}
+
+.number-value	{
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	padding: 33px 208px 30px 124px;
+	font-family: "Arial", sans-serif;
+	font-size:15px;
+	color: black;
+}
+
+select {
+	padding-right: 25px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	position: relative;
+	display: inline-block;
+	background-color: transparent;
+	border: 2px solid #8bade4;
+	padding-left:	0.5em ;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: inherit;
+	line-height: inherit;
+	border-radius: 3px;
+	width: 60px;
+	height: 30px;
+} 
+
+.center-content {
+	text-align: center;
+}
+
+p	{
+	display: block;
+	margin-top: 35px;
+}
+
+.button {
+	display: inline-block;
+	text-decoration: none;
+	background-color: #33A845; 
+	color: white;
+	border: 0px solid #33A845;
+	border-radius: 100px;
+	font-size: 15px;
+	padding: 15px 60px; ;
+	 transition: all 0.8s ease;
+	 text-transform: uppercase;
+	 font-family: "Arial", sans-serif;
+}
+
+.button:hover{
+	text-decoration: bold; 
+	background-color: #8bade4;
+	color: #787878;	
+}
+
+.selected{
+	font-family: "Arial", sans-serif;
+	font-size:20px;	
+	color: #3388A8;
+}
+
+.total {
+	text-transform: capitalize;
+}
+
+.total > span:nth-child(2), .total > span:nth-child(3) {
+	color: #3388A8;
+}
